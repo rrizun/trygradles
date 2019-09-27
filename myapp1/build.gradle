@@ -1,0 +1,11 @@
+plugins {
+  id 'java'
+  id "org.springframework.boot" version "2.1.5.RELEASE"
+}
+
+apply plugin: "io.spring.dependency-management"
+
+dependencies {
+    implementation project(':base')
+    implementation 'org.springframework.boot:spring-boot-starter'
+}
