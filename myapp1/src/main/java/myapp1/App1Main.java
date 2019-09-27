@@ -1,4 +1,4 @@
-package app2;
+package myapp1;
 
 import javax.annotation.PostConstruct;
 
@@ -8,13 +8,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import base.Base;
 
 @SpringBootApplication
-public class App2Main {
+public class App1Main {
   public static void main(String... args) {
-    SpringApplication.run(App2Main.class, args);
+    SpringApplication.run(App1Main.class, args);
   }
 
   @PostConstruct
   private void postConstruct() {
-    System.out.println("from app2:"+new Base().sayHello());
+    System.out.println("from app1:"+new Base().sayHello());
   }
 }
