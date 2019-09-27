@@ -5,6 +5,10 @@ plugins {
 
 apply plugin: "io.spring.dependency-management"
 
+repositories {
+    jcenter()
+}
+
 dependencies {
     implementation project(':base')
     implementation 'org.springframework.boot:spring-boot-starter'
